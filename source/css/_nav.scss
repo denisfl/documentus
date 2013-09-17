@@ -1,0 +1,70 @@
+.nav {
+  padding: 40px 0 0 36px;
+}
+  .nav__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+    .nav__item {
+    }
+
+    .nav__item--title {
+      padding: 11px 0;
+      font-size: 16px;
+      color: $sidebarItemTitleColor;
+      background-color: $sidebarBackgroundHeader;
+      border-bottom: 1px solid $sidebarBorderColor;
+
+      &:before {
+        font-family: "fontello";
+        font-style: normal;
+        font-weight: normal;
+        speak: none;
+        content: '\e801';
+
+        display: inline-block;
+        text-decoration: inherit;
+        width: 1em;
+        margin-right: .6em;
+        text-align: center;
+        /* opacity: .8; */
+
+        /* For safety - reset parent styles, that can break glyph codes*/
+        font-variant: normal;
+        text-transform: none;
+
+        /* fix buttons height, for twitter bootstrap */
+        line-height: 1em;
+
+        /* Animation center compensation - margins should be symmetric */
+        /* remove if not needed */
+        margin-left: .6em;
+      }
+    }
+      .nav__link {
+        display: block;
+        padding: 11px 18px 11px 10px;
+        color: $sidebarTextColor;
+        text-shadow: 0 1px $sidebarTextShadowColor;
+        border-top: 1px solid transparent;
+        font-size: 12px;
+
+        @include transition(all .2s ease);
+
+        &:hover {
+          color: $sidebarHoverLinkColor;
+          text-decoration: none;
+        }
+      }
+
+    .nav__link--active {
+      //.nav__link {
+        padding-left: 18px;
+        text-shadow: 0 -1px $sidebarActiveLinkTextShadowColor;
+        border-top-color: $sidebarActiveLinkBorderColor;
+        background-color: $sidebarActiveLinkBgColor;
+        @include box-shadow(-1px 2px 2px $sidebarActiveLinkBoxShadowColor);
+        &:hover {color: $sidebarTextColor;}
+      //}
+    }

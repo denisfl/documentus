@@ -1,0 +1,22 @@
+//.container {
+//  width: $containerWidth;
+//  @include container-fixed();
+//}
+
+.container {
+  position: relative;
+  margin: 0 0 0 $sidebarWidth;
+}
+
+  .content__header {
+    height: $headerHeight;
+    background-color: $containerBackgroundHeader;
+    border-bottom: 1px solid $containerBorderColor;
+  }
+
+  .content {
+    padding: 45px 50px;
+  }
+    .article {
+      margin: 0 0 60px;
+    }

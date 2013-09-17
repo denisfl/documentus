@@ -1,0 +1,80 @@
+//
+// Variables
+// --------------------------------------------------
+
+
+// Global values
+// --------------------------------------------------
+
+
+// Grays
+// -------------------------
+$black:                 #000 !default;
+$grayDarker:            #272727 !default;
+$grayDark:              #333 !default;
+$gray:                  #666 !default;
+$grayLight:             #d3d3d3 !default;
+$grayLighter:           #e8e7e7 !default;
+
+$white:                 #fff !default;
+// Scaffolding
+// -------------------------
+$bodyBackground:        $white !default;
+$textColor:             #34383b !default;
+
+
+// Sidebar
+$sidebarBackground:               #404853 !default;
+$sidebarBackgroundHeader:         #353b47 !default;
+$sidebarBorderColor:              #535b66 !default;
+$sidebarTextShadowColor:          #303338 !default;
+$sidebarHeadColor:                #9197a3 !default;
+$sidebarTextColor:                #f5f5f7 !default;
+$sidebarHoverLinkColor:           #e55964 !default;
+
+$sidebarActiveLinkBgColor:        #e55964 !default;
+$sidebarActiveLinkBorderColor:    #ee8691 !default;
+$sidebarActiveLinkBoxShadowColor: #2c3039 !default;
+$sidebarActiveLinkTextShadowColor:#B42B3A !default;
+
+$sidebarItemTitleColor:           #9197a3 !default;
+
+
+// Container
+$containerBoxShadow:              #2b323c !default;
+$containerBackgroundHeader:       #f1f2f4 !default;
+$containerBorderColor:            #c6cdd5 !default;
+
+
+
+// Links
+// -------------------------
+$linkColor:             #08c !default;
+$linkColorHover:        darken($linkColor, 15%) !default;
+
+
+// Typography
+// -------------------------
+$sansFontFamily:        'PT Sans', "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$serifFontFamily:       Georgia, "Times New Roman", Times, serif !default;
+$monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace !default;
+
+$baseFontSize:          14px !default;
+$baseFontFamily:        $sansFontFamily !default;
+$baseLineHeight:        20px !default;
+$altFontFamily:         $serifFontFamily !default;
+
+$headingsFontFamily:    inherit !default; // empty to use BS default, $baseFontFamily
+$headingsFontWeight:    normal !default;    // instead of browser default, bold
+$headingsColor:         #e45767 !default; // empty to use BS default, $textColor
+
+// Hr border color
+// -------------------------
+$hrBorder:                $grayLighter !default;
+
+
+// GRID
+// --------------------------------------------------
+$containerWidth:              100%;
+$sidebarWidth:                240px;
+$headerHeight:                51px;
